@@ -17,3 +17,9 @@ const userSchema = new mongoose.Schema({
   profile: profileSchema,
   activity: activitySchema,
 });
+
+const User = mongoose.model("User", userSchema);
+
+module.exports = {
+  User,
+};
